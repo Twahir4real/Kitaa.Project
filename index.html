@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KITAA - Mfumo wa Makusanyo ya Ada</title>
+   <link rel="stylesheet" href="kitaa.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">KITAA</div>
+            <div class="nav-links">
+                <button onclick="showPage('home')" class="active" id="nav-home">Nyumbani</button>
+                <button onclick="showPage('about')" id="nav-about">Kuhusu Sisi</button>
+                <button onclick="showPage('contact')" id="nav-contact">Mawasiliano</button>
+            </div>
+        </nav>
+
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="hero">
+                <h1>Karibu KITAA</h1>
+                <p>Mfumo wa Dijiti wa Makusanyo ya Ada za Mtaa</p>
+                <div class="tagline">Usalama na Usafi wa Mazingira Yetu</div>
+            </div>
+
+            <div class="service-cards">
+                <div class="service-card" onclick="showPage('taka')">
+                    <div class="service-icon">🗑️</div>
+                    <h2>Ukusanyaji Taka</h2>
+                    <p>Huduma ya ukusanyaji taka kwa mazingira safi na yenye afya. Lipia ada yako kwa urahisi kupitia simu yako.</p>
+                    <button class="btn">Pata Taarifa Zaidi</button>
+                </div>
+
+                <div class="service-card" onclick="showPage('ulinzi')">
+                    <div class="service-icon">🛡️</div>
+                    <h2>Ulinzi Shirikishi</h2>
+                    <p>Usalama wa mtaa wetu ni jukumu letu. Changia katika kulinda familia na mali zetu kwa pamoja.</p>
+                    <button class="btn">Pata Taarifa Zaidi</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <div class="about-container">
+                <div class="about-header">
+                    <h1>Kuhusu KITAA</h1>
+                    <p>Mfumo wa Kisasa wa Usimamizi wa Huduma za Kijamii</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Malengo Yetu</h2>
+                    <p>
+                        KITAA (Kituo cha Teknolojia cha Usimamizi wa Ada na Usalama) ni jukwaa la kidijiti 
+                        lililoanzishwa na Serikali ya Mitaa ili kurahisisha malipo ya huduma za kijamii. 
+                        Lengo letu kuu ni kujenga jamii salama, safi na yenye maendeleo kupitia teknolojia ya kisasa.
+                    </p>
+                    <p>
+                        Tunaamini kwamba teknolojia inaweza kubadilisha jinsi wananchi wanavyohusiana na serikali zao, 
+                        na hivyo kuongeza uwajibikaji, uwazi na ufanisi katika utoaji wa huduma.
+                    </p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Kusudi la Mradi</h2>
+                    <p>
+                        Mradi wa KITAA una madhumuni makuu mawili muhimu:
+                    </p>
+                    <p>
+                        <strong>1. Kusaidia Wananchi:</strong> Kuwawezesha wananchi kulipa ada za huduma za kijamii 
+                        (ukusanyaji taka na ulinzi wa mtaa) kwa urahisi zaidi kupitia simu zao za mkononi, wakati wowote 
+                        na mahali popote. Hii inaondoa hitaji la kwenda kwa viongozi wa mtaa au kukutana kimoja kwa moja, 
+                        ikiwapa watu wakati na usalama zaidi.
+                    </p>
+                    <p>
+                        <strong>2. Kusaidia Serikali:</strong> Kuwezesha serikali za mitaa kusimamia na kufuatilia malipo 
+                        kwa ufanisi zaidi, kupunguza utegemezi wa fedha taslimu, kuongeza uwazi, na kupunguza mwingiliano 
+                        usio wa lazima kati ya viongozi na wananchi ambao unaweza kusababisha makosa au rushwa.
+                    </p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Tatizo Tunalotatua</h2>
+                    <p>
+                        Kabla ya KITAA, mfumo wa ukusanyaji wa ada ulikuwa na changamoto nyingi:
+                    </p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h3>📝 Ukosefu wa Rekodi</h3>
+                            <p>Malipo yalikuwa hayakuandikwa vizuri, ikisababisha migogoro na upotezaji wa pesa.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>⏰ Upotevu wa Muda</h3>
+                            <p>Wananchi walilazimika kutumia muda mwingi kuwatembelea viongozi wa mtaa kulipa ada.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>💰 Fedha Taslimu</h3>
+                            <p>Matumizi ya fedha taslimu yalisababisha hatari za usalama na upotevu wa pesa.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>🔍 Ukosefu wa Uwazi</h3>
+                            <p>Wananchi hawakuweza kufuatilia malipo yao au kuona jinsi fedha zinavyotumiwa.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>📊 Data Haina Mpangilio</h3>
+                            <p>Serikali ilikuwa na ugumu wa kupanga na kuchanganua data ya malipo.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>🤝 Mwingiliano Mwingi</h3>
+                            <p>Mwingiliano wa karibu kati ya wananchi na viongozi uliweza kusababisha rushwa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Manufaa kwa Jamii</h2>
+                    <p>
+                        Kwa wananchi: Malipo ya haraka, salama na rahisi; rekodi za dijiti za malipo yao; 
+                        kupunguza muda wa kusafiri; ongezeko la usalama kwa kuepuka kubeba fedha taslimu.
+                    </p>
+                    <p>
+                        Kwa serikali: Usimamizi bora wa fedha; uwazi katika malipo; data sahihi kwa mipango ya maendeleo; 
+                        kupungua kwa rushwa na makosa; ufanisi katika utoaji wa huduma.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Taka Page -->
+        <div id="taka" class="page">
+            <div class="payment-container">
+                <div class="payment-header">
+                    <h1>🗑️ Ada ya Ukusanyaji Taka</h1>
+                    <p>Fanya malipo yako kwa urahisi</p>
+                </div>
+
+                <div class="payment-form">
+                    <div class="form-group">
+                        <label>Jina Kamili</label>
+                        <input type="text" id="taka-name" placeholder="Ingiza jina lako kamili">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nambari ya Nyumba</label>
+                        <input type="text" id="taka-house" placeholder="Mfano: Mtaa A, Nyumba 12">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mwezi</label>
+                        <select id="taka-month">
+                            <option value="Januari 2025">Januari 2025</option>
+                            <option value="Disemba 2024" selected>Disemba 2024</option>
+                            <option value="Novemba 2024">Novemba 2024</option>
+                        </select>
+                    </div>
+
+                    <div class="amount-display">
+                        <h3>Kiasi cha Kulipa</h3>
+                        <div class="amount">TZS 10,000</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chagua Njia ya Malipo</label>
+                        <div class="payment-methods">
+                            <div class="payment-method selected" onclick="selectPayment(this, 'taka')">
+                                <div style="font-size: 32px;">📱</div>
+                                <div>M-Pesa</div>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment(this, 'taka')">
+                                <div style="font-size: 32px;">💳</div>
+                                <div>Tigopesa</div>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment(this, 'taka')">
+                                <div style="font-size: 32px;">🏦</div>
+                                <div>Airtel Money</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nambari ya Simu ya Malipo</label>
+                        <input type="tel" id="taka-phone" placeholder="0700123456">
+                    </div>
+
+                    <button class="btn" onclick="submitPayment('taka')" style="width: 100%; padding: 15px;">Lipia Sasa</button>
+                </div>
+
+                <div class="history-section">
+                    <h2>Historia ya Malipo</h2>
+                    <div class="history-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tarehe</th>
+                                    <th>Mwezi</th>
+                                    <th>Kiasi</th>
+                                    <th>Hali</th>
+                                    <th>Risiti</th>
+                                </tr>
+                            </thead>
+                            <tbody id="taka-history">
+                                <tr>
+                                    <td>15 Dis 2024</td>
+                                    <td>Novemba 2024</td>
+                                    <td>TZS 10,000</td>
+                                    <td><span class="status-badge status-paid">Imelipwa</span></td>
+                                    <td><button class="btn-secondary">Pakua</button></td>
+                                </tr>
+                                <tr>
+                                    <td>12 Nov 2024</td>
+                                    <td>Oktoba 2024</td>
+                                    <td>TZS 10,000</td>
+                                    <td><span class="status-badge status-paid">Imelipwa</span></td>
+                                    <td><button class="btn-secondary">Pakua</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ulinzi Shirikishi Page -->
+        <div id="ulinzi" class="page">
+            <div class="payment-container">
+                <div class="payment-header">
+                    <h1>🛡️ Ada ya Ulinzi Shirikishi</h1>
+                    <p>Changia usalama wa mtaa wetu</p>
+                </div>
+
+                <div class="payment-form">
+                    <div class="form-group">
+                        <label>Jina Kamili</label>
+                        <input type="text" id="ulinzi-name" placeholder="Ingiza jina lako kamili">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nambari ya Nyumba</label>
+                        <input type="text" id="ulinzi-house" placeholder="Mfano: Mtaa A, Nyumba 12">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mwezi</label>
+                        <select id="ulinzi-month">
+                            <option value="Januari 2025">Januari 2025</option>
+                            <option value="Disemba 2024" selected>Disemba 2024</option>
+                            <option value="Novemba 2024">Novemba 2024</option>
+                        </select>
+                    </div>
+
+                    <div class="amount-display">
+                        <h3>Kiasi cha Kulipa</h3>
+                        <div class="amount">TZS 15,000</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chagua Njia ya Malipo</label>
+                        <div class="payment-methods">
+                            <div class="payment-method selected" onclick="selectPayment(this, 'ulinzi')">
+                                <div style="font-size: 32px;">📱</div>
+                                <div>M-Pesa</div>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment(this, 'ulinzi')">
+                                <div style="font-size: 32px;">💳</div>
+                                <div>Tigopesa</div>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment(this, 'ulinzi')">
+                                <div style="font-size: 32px;">🏦</div>
+                                <div>Airtel Money</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nambari ya Simu ya Malipo</label>
+                        <input type="tel" id="ulinzi-phone" placeholder="0700123456">
+                    </div>
+
+                    <button class="btn" onclick="submitPayment('ulinzi')" style="width: 100%; padding: 15px;">Lipia Sasa</button>
+                </div>
+
+                <div class="history-section">
+                    <h2>Historia ya Malipo</h2>
+                    <div class="history-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tarehe</th>
+                                    <th>Mwezi</th>
+                                    <th>Kiasi</th>
+                                    <th>Hali</th>
+                                    <th>Risiti</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ulinzi-history">
+                                <tr>
+                                    <td>15 Dis 2024</td>
+                                    <td>Novemba 2024</td>
+                                    <td>TZS 15,000</td>
+                                    <td><span class="status-badge status-paid">Imelipwa</span></td>
+                                    <td><button class="btn-secondary">Pakua</button></td>
+                                </tr>
+                                <tr>
+                                    <td>12 Nov 2024</td>
+                                    <td>Oktoba 2024</td>
+                                    <td>TZS 15,000</td>
+                                    <td><span class="status-badge status-paid">Imelipwa</span></td>
+                                    <td><button class="btn-secondary">Pakua</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1>Wasiliana Nasi</h1>
+                    <p>Tuko hapa kukusaidia. Wasiliana nasi kwa njia yoyote rahisi kwako.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Simu</h3>
+                        <p><a href="tel:+255123456789">+255 123 456 789</a></p>
+                        <p><a href="tel:+255987654321">+255 987 654 321</a></p>
+                        <p style="color: #888; font-size: 14px; margin-top: 10px;">Siku za Kazi: 8:00 AM - 5:00 PM</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Barua Pepe</h3>
+                        <p><a href="mailto:info@kitaa.go.tz">info@kitaa.go.tz</a></p>
+                        <p><a href="mailto:support@kitaa.go.tz">support@kitaa.go.tz</a></p>
+                        <p style="color: #888; font-size: 14px; margin-top: 10px;">Tutajibu ndani ya saa 24</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/255123456789" target="_blank">+255 123 456 789</a></p>
+                        <p style="color: #888; font-size: 14px; margin-top: 10px;">Huduma ya Haraka 24/7</p>
+                        <button class="btn" style="margin-top: 15px;" onclick="window.open('https://wa.me/255123456789', '_blank')">
+                            Tuma Ujumbe
+                        </button>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🌐</div>
+                        <h3>Tovuti</h3>
+                        <p><a href="https://www.kitaa.go.tz" target="_blank">www.kitaa.go.tz</a></p>
+                        <p style="color: #888; font-size: 14px; margin-top: 10px;">Tembelea tovuti yetu kwa taarifa zaidi</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📠</div>
+                        <h3>Faksi</h3>
+                        <p>+255 22 123 4567</p>
+                        <p style="color: #888; font-size: 14px; margin-top: 10px;">Kwa nyaraka rasmi</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Ofisi Kuu</h3>
+                        <p>Mtaa wa Kinondoni</p>
+                        <p>Dar es Salaam, Tanzania</p>
+                        <p style="color: #888; font-size: 14px; margin-top: 10px;">Karibu kutembelea</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Tuma Ujumbe</h2>
+                    <form onsubmit="submitContact(event)">
+                        <div class="form-group">
+                            <label>Jina Kamili</label>
+                            <input type="text" required placeholder="Ingiza jina lako kamili">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Barua Pepe</label>
+                            <input type="email" required placeholder="mfano@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nambari ya Simu</label>
+                            <input type="tel" required placeholder="+255 XXX XXX XXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ujumbe</label>
+                            <textarea required placeholder="Andika ujumbe wako hapa..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" style="width: 100%; padding: 15px;">
+                            Tuma Ujumbe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Page Navigation
+        function showPage(pageName) {
+            const pages = document.querySelectorAll('.page');
+            const navButtons = document.querySelectorAll('.nav-links button');
+            
+            pages.forEach(page => page.classList.remove('active'));
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(pageName).classList.add('active');
+            document.getElementById('nav-' + pageName).classList.add('active');
+        }
+
+        // Contact Form Submission
+        function submitContact(event) {
+            event.preventDefault();
+            alert('Asante kwa kuwasiliana nasi!\n\nUjumbe wako umetumwa kikamilifu. Tutakujibu hivi karibuni.');
+            event.target.reset();
+        }
+
+        // Payment Method Selection
+        function selectPayment(element, type) {
+            const methods = element.parentElement.querySelectorAll('.payment-method');
+            methods.forEach(method => method.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        // Submit Payment
+        function submitPayment(type) {
+            const name = document.getElementById(type + '-name').value;
+            const house = document.getElementById(type + '-house').value;
+            const month = document.getElementById(type + '-month').value;
+            const phone = document.getElementById(type + '-phone').value;
+
+            if (!name || !house || !phone) {
+                alert('Tafadhali jaza taarifa zote!');
+                return;
+            }
+
+            // Simulate payment processing
+            alert('Ombi la malipo limetumwa!\n\nJina: ' + name + '\nNyumba: ' + house + '\nMwezi: ' + month + '\nSimu: ' + phone + '\n\nUtapokea ujumbe wa kuthibitisha hivi punde.');
+            
+            // Add to history
+            const tbody = document.getElementById(type + '-history');
+            const newRow = tbody.insertRow(0);
+            const today = new Date().toLocaleDateString('sw-TZ', { day: 'numeric', month: 'short', year: 'numeric' });
+            const amount = type === 'taka' ? '10,000' : '15,000';
+            
+            newRow.innerHTML = `
+                <td>${today}</td>
+                <td>${month}</td>
+                <td>TZS ${amount}</td>
+                <td><span class="status-badge status-pending">Inasubiri</span></td>
+                <td><button class="btn-secondary" disabled>Subiri</button></td>
+            `;
+
+            // Clear form
+            document.getElementById(type + '-name').value = '';
+            document.getElementById(type + '-house').value = '';
+            document.getElementById(type + '-phone').value = '';
+        }
+    </script>
+</body>
+</html>
